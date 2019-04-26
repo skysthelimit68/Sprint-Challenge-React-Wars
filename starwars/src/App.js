@@ -53,8 +53,7 @@ class App extends Component {
       console.log(newMult);
     }
     this.setState({
-      prev: "",
-      next: "",
+      
       picIndexMultiplier: newMult
       
     })

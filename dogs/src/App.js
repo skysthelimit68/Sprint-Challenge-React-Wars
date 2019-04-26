@@ -51,7 +51,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">Fetch Dogs</h1>
        
-        <div>
+        <div className="dog-photos-wrapper">
           <DogList list={this.state.dogs} />
         </div>
         

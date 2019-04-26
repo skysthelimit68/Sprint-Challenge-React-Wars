@@ -64,11 +64,14 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
+        <div className="navButton-wrapper">
+          <button name={this.state.prev} id="prev" onClick = {this.getNewPage}>Previous</button>
+          <button name={this.state.next} id="next" onClick = {this.getNewPage}>Next</button>
+        </div>
         <div>
           <CharacterList characters={this.state.starwarsChars} pics={this.state.starwarsPix} picMult={this.state.picIndexMultiplier} />
         </div>
-        <button name={this.state.prev} id="prev" onClick = {this.getNewPage}>Previous</button>
-        <button name={this.state.next} id="next" onClick = {this.getNewPage}>Next</button>
+        
       </div>
     );
   }

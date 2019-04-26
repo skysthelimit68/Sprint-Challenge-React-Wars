@@ -12,7 +12,7 @@ class App extends Component {
 
 
   componentDidMount() {
-    this.getDogs('https://dog.ceo/api/breeds/image/random/10');
+    this.getDogs('https://dog.ceo/api/breed/frise/images/random/10');
   }
 
   getDogs = URL => {

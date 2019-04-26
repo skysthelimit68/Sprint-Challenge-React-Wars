@@ -3,12 +3,12 @@ import Character from './Character';
 
 const CharacterList = props => {
     return (
-        <div>
-            {props.characters.map( elem => (
-            <Character key={elem.created} profile={elem} />
+        <div className="characterList" >
+            {props.characters.map( (elem , index)  => (
+                
+            <Character key={elem.created} profile={elem} pic={props.pics[index]} />
             ))}
         </div>
-        
     )
 }
 

@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import './App.css';
+import './components/StarWars.css';
 import CharacterList from './components/CharacterList';
+import { pics } from './components/CharacterPic';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      starwarsChars: []
+      starwarsChars: [],
+      starwarsPix: pics
     };
   }
+
 
   componentDidMount() {
     this.getCharacters('https://swapi.co/api/people/');
@@ -35,7 +39,7 @@ class App extends Component {
       <div className="App">
         <h1 className="Header">React Wars</h1>
         <div>
-          <CharacterList characters={this.state.starwarsChars} />
+          <CharacterList characters={this.state.starwarsChars} pics={this.state.starwarsPix} />
         </div>
       </div>
     );

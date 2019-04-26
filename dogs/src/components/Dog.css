@@ -1,0 +1,16 @@
+
+.dog-photos-wrapper {
+    width: 100%;
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.dog-wrapper {
+    width:31%;
+}
+
+.dog-wrapper img {
+    width:100%;
+}

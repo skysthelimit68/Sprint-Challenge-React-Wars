@@ -35,27 +35,25 @@ class App extends Component {
           prev: data.previous,
           next: data.next
          });
-        console.log(data.results)
-        console.log(this.state.prev)
-        console.log(this.state.next)
       })
       .catch(err => {
         throw new Error(err);
       });
   };
 
+  //method to get new page
   getNewPage = event => {
     event.preventDefault();
+    //setting photo index multiplier
     let newMult = this.state.picIndexMultiplier;
     if(event.target.name !== "") {
+      //get characters for the new page
       this.getCharacters(event.target.name);
+      //updating photo index multipler
       newMult = event.target.id === "prev" ? newMult - 10: newMult + 10 ;
-      console.log(newMult);
     }
     this.setState({
-      
       picIndexMultiplier: newMult
-      
     })
 
   }

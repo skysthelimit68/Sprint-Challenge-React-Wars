@@ -26,11 +26,21 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a Javascript library that makes working with DOM easier via virtual DOM. It uses individual components to manage each individual elements of the DOM.  Components keeps tracks of data they want to track via state and change those data in the least amount of steps it takes to reflect on the DOM as possible.
+
 - [ ] What does it mean to _think_ in react?
+
+1) Build small components that can be put together to create a large application
+2) Top Down approach 
+
 
 - [ ] Describe state.
 
+State keep track of data we want to keep track of
+
 - [ ] Describe props.
+
+Props are the elements we want to pass down, they can be states and/or methods
 
 ## Project Set Up
 
